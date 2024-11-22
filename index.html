@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice's 3D Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="particles"></div>
+    <div class="scene" id="scene">
+        <div class="carousel" id="carousel">
+            <div class="panel active">
+                <h2>Hi, I'm <span class="highlight">Rice</span></h2>
+                <p>Full-Stack Developer with a passion for creating interactive apps.</p>
+            </div>
+            <div class="panel">
+                <h2>My Skills</h2>
+                <p>Java, JavaScript, Python, HTML, CSS, PHP, and Bash.</p>
+            </div>
+            <div class="panel">
+                <h2>Projects</h2>
+                <p>Check out my exciting creations!</p>
+                <button id="scrollBtn" class="scroll-btn" onclick="scrollToProjects()">See Projects</button>
+            </div>
+            <div class="panel">
+                <h2>Contact Me</h2>
+                Email: <a href="mailto:keenwarice@gmail.com">keenwarice@gmail.com</a><br>
+                <span>
+                    <img src="https://keenwa.x10.mx/discord.png" class="discord" alt="discord:" style="width:20px; height:20px; vertical-align: middle;"> keen_wa
+                </span>
+            </div>
+            <div class="panel">
+                <h2>Github</h2>
+                <p>Check out my <a href="https://github.com/keenwarice">Github</a></p>
+            </div>
+            <div class="panel">
+                <img src="https://keenwa.x10.mx/burger.png" alt="Profile Image">
+            </div>
+        </div>
+
+        <div class="carousel-nav">
+            <button id="prevBtn" onclick="changeSlide(-1)">&#10094;</button>
+            <button id="nextBtn" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <section id="projects-section">
+        <div class="project">
+            <h3>Hiroshima Bombs</h3>
+                <p>A project I made when I was bored. It shows the Hiroshima Bomb equivelent of random objects.</p>
+                <a href="hiroshimabombs" class="btn" style="color:red;">Open</a>
+            </div>
+            <div class="project">
+                <h3>Burgerify</h3>
+                <p>A bookmarklet that makes <strong>everything</strong> about a page better!</p>
+                <p>Drag the button below into your bookmarks bar, then click it whenever you visit a page!</p>
+                <a href="javascript:(function(){var audio=new Audio('https://keenwa.x10.mx/nomnomnom.mp3');audio.play();var imgs=document.getElementsByTagName('img');for(var i=0;i<imgs.length;i++){imgs[i].src='https://keenwa.x10.mx/burger.png';imgs[i].setAttribute('draggable','false');}})();" class="btn styles-animation-text" draggable="true">Burgerify</a>
+            </div>
+            <div class="project">
+            <h3>About:Blank Cloaker</h3>
+                <p>A tool that can cloak most websites into an About:Blank tab.</p>
+                <a href="aboutblankcloaker" class="btn" style="color:red;">Open</a>
+            </div>
+            <div class="project">
+            <h3>PageFlood+</h3>
+                <p>A history flooder that fills your history with various websites.</p>
+                <a href="https://github.com/keenwarice/history-flooder" class="btn" style="color:blue;">Open with GitHub</a>
+                <a href="pagefloodplus" class="btn" style="color:red;">Open directly</a>
+            </div>
+            <div class="project">
+                <h3>Notif Emulator</h3>
+                <p>May or may not be used in wh5le ;)</p>
+                <a href="notifemulator" class="btn" style="color:red;">Open</a>
+            </div>
+            <div class="project">
+                <h3>RiceBreakout</h3>
+                <p>A work-in progress game to help me learn the canvas API. Inspired by <a href="https://nuclear-nc.x10.mx">NuclearNatoCat.</a></p>
+                <a href="breakout" class="btn" style="color:red;">Play Now!</a>
+            </div>
+            <div class="project">
+                <h3>RiceOS Skiovox Edition</h3>
+                <p>RiceOS for Skiovox, replacing the Skiovox helper, but with many RiceOS exclusive features removed.</p>
+                <a href="https://github.com/keenwarice/riceskiovoxhelper" class="btn" style="color:blue;">Open with GitHub</a>
+                <a href="riceskiovoxhelper" class="btn" style="color:red;">Open directly</a>
+            </div>
+            <div class="project">
+                <h3 class="glitch">CoolColors</h3>
+                <p>AWESOME Styles with HTML, CSS, and Javascript. (use with credit)</p>
+                <a href="coolcolors" class="btn styles-animation-text">Visit</a>
+            </div>
+            <div class="project">
+                <h3>Extension installer</h3>
+                <p>This is a handy piece of code you can run with Python that generates a Javascript bookmarklets that
+                    you can run easily with the URL bar, or Inspect element console.</p>
+                <a href="https://github.com/keenwarice/extension" class="btn" style="color:blue;">Open with GitHub</a>
+            </div>
+            <p style="color:lightgreen;">More to come!</p>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Rice<br> Find me on <a href="https://github.com/keenwarice" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
