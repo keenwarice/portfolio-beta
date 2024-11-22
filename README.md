@@ -7,4 +7,4 @@ This is a dynamic, interactive 3D portfolio website designed to showcase my skil
 Includes:
 
 A 3D carousel that rotates through different panels, including my skills, projects, and contact info.
-The page is also mobile-friendly.
+Unfortunately, this page is NOT mobile-friendly.
